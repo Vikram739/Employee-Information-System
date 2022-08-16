@@ -1,0 +1,156 @@
+/* 
+  Document   : add1.css
+  Created on : 7 May, 2021, 08:40:55 PM
+  Author     : Vikram Markali
+*/
+
+
+
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  display:flex;
+  position:fixed;
+  background:url(images/e1.jpg);
+  background-size: cover;
+  font-family: 'Nunito', sans-serif;
+}
+.form{
+  position: relative;
+  top:100px;
+  left:-240px;
+  width: 1150px;
+  height: 600px;
+  padding: 50px 30px;
+  background: rgba(175, 175, 175, 0.274);
+  box-shadow: -1px 4px 28px 0px rgba(182, 179, 179, 0.658);
+  border: 3px solid #888b8d86;
+  border-radius: 10px;
+  -webkit-transition:-webkit-transform 1.2s ease-in-out;
+  transition: -webkit-transform 1.2s ease-in-out;
+  transition: transform 1.2s ease-in-out;
+  transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+}
+
+h1{
+	position:relative;
+	left: 150px;
+	margin-left:150px;
+	top:50px;
+    font-size: 35px;
+    color: rgb(249, 251, 252);
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    display:block;
+	font-weight: bolder;
+    padding: 0;
+    white-space: nowrap;
+    font-family: monospace;   
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0954e0, 0 0 40px #0954e0, 0 0 50px #0954e0, 0 0 60px #0954e0, 0 0 70px #0954e0;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #0bc1f8, 0 0 40px #0bc1f8, 0 0 50px #0bc1f8, 0 0 60px #0bc1f8, 0 0 70px #0bc1f8, 0 0 80px #0bc1f8;
+  }
+}
+label{
+  margin-top:-16px;
+  color: #fbfdff;
+  text-shadow: 2px 2px 4px #000000;
+  filter: opacity(200%);
+  display: block;
+  text-align: left;
+  font-size: 17px;
+  font-weight: bold;
+}
+.input{
+  display: block;
+  width: 500px;
+  height: 32.5px;
+  margin-top: -11px;
+  font-size: 16px;
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif; 
+  border-radius: 7.5px;
+  outline: none;
+  font-weight: 500;
+  background-color: rgba(248, 245, 248, 0.623);
+  border: 1px solid rgba(179, 173, 173, 0.842);
+  color: #010305;
+  transition: all 0.3s ease;
+}
+input:focus,
+input:valid{
+  border-color: #dbd7dd;
+}
+
+.button{
+  position:relative;
+  left: 150px;
+  display: block;
+  width: 130px;
+  height: 34px;
+  border-radius: 5px;
+  background-color: #eff1f3; 
+  text-decoration: none;
+  border: none;
+  color: rgb(2, 2, 2);
+  text-align:center;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: monospace;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.radio1{
+	position:relative;
+	top:-18.5px;
+	left:40px;
+	display: inline;
+}
+.radio2{
+	position:relative;
+	top:-18.5px;
+	left:80px;
+	display: inline;
+}
+.radio3{
+	position:relative;
+	top:-18.5px;
+	left:120px;
+	display: inline;
+}
+.invalid{
+	position:relative;
+	left: 580px;
+	top: -500px;
+	background:transparent;
+	padding:7.5px;
+	color: red;
+	text-align: center;
+	font-size:22px;
+	font-weight:600;
+	width: 400px;
+	height:40px;
+	border-radius: 5px;
+	
+}
+.voda{
+	position:relative;
+	left: 500px;
+	top: -480px;
+  width: 620px;
+  height: 350px;
+  opacity: 80%;
+	background:rgba(216, 214, 214, 0);
+}

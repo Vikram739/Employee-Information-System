@@ -1,0 +1,143 @@
+
+/* 
+    Document   : id.css
+    Created on : 13 may, 2021, 01:40:35 AM
+    Author     : Vikram Markali
+*/
+
+
+
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  display:flex;
+  position:fixed;
+  justify-content: center;
+  align-items: center;
+  background: url(images/e2.jpg);
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+}
+input, button{
+  
+  outline: none;
+}
+.form{
+  position: relative;
+  align-items:center;
+  width: 550px;
+  height: 400px;
+ 
+ /* transform: translate(-50%,-50%);*/
+  background: rgba(255,255,255,0.04);
+  box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+  padding: 10px;
+  
+  
+  -webkit-transition:-webkit-transform 1.2s ease-in-out;
+  transition: -webkit-transform 1.2s ease-in-out;
+  transition: transform 1.2s ease-in-out;
+  transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+  border-radius: 20px;
+}
+
+.invalid{
+	position:relative;
+	left: -5px;
+	top: 15px;
+	background:transparent;
+	padding:7.5px;
+	color: red;
+	text-align: center;
+	font-size:22px;
+	font-weight:600;
+	width: 540px;
+	height:40px;
+	border-radius: 5px;
+	
+}
+
+label{
+  display: block;
+  width: 300px;
+  margin: 25px auto 0;
+  text-align: center;
+}
+
+label span{
+  font-size: 30px;
+  display: block;
+  position:relative;
+ 
+  top:25px;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+input{
+  display: block;
+  position:relative;
+  left:-50px;
+  top:60px;
+  width: 400px;
+  height: 55px;
+  margin-top: 5px;
+  font-size: 16px;
+  color: #141414cc;
+  border: 4px solid rgba(255, 255, 255, 0);
+  border-radius: 50px ;
+  text-align: center;
+  background:#fcf9f9cb;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif; 
+}
+input:focus {
+  outline: none;
+  border-color: rgba(8, 0, 0, 0.007);
+  box-shadow: 0 0 10px rgba(250, 241, 241, 0.733);
+}
+
+button{
+  display: block;
+  margin: 0 auto;
+  width: 260px;
+  height: 36px;
+  border-radius: 30px;
+  color: rgb(7, 0, 0);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.submit{
+  display: block;
+  position:relative;
+  
+  top:120px;
+  width: 150px;
+  height: 50px;
+  border-radius: 13px;
+  background-color: #f9f9fcf6; 
+  font-size: 22px;
+  font-weight: 400;
+  border: none;
+  color: rgb(7, 0, 0);
+  text-transform:uppercase;
+  text-align:center;
+   font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
+}
+
+.submit:hover{
+  background: -webkit-linear-gradient(left, #fcfafd, #fdfdfd);
+}
+
+

@@ -1,0 +1,133 @@
+/* 
+  Document   : display.css
+  Created on : 17 May, 2021, 06:43:23 PM
+  Author     : Vikram Markali
+*/
+
+
+
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  body{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    position:fixed;
+    background:url(images/e3.jpg);
+    background-size: cover;
+    font-family: 'Nunito', sans-serif;
+  }
+  .form{
+    position: relative;
+    top:100px;
+    left:-240px;
+    width: 1150px;
+    height: 600px;
+    padding: 50px 30px;
+    background: rgba(165, 165, 165, 0.24);
+    box-shadow: -3px 4px 28px 0px rgba(119, 119, 119, 0.705);
+    border: 3px solid #888b8d86;
+    border-radius: 10px;
+    -webkit-transition:-webkit-transform 1.2s ease-in-out;
+    transition: -webkit-transform 1.2s ease-in-out;
+    transition: transform 1.2s ease-in-out;
+    transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+  }
+  
+  h1{
+      position:relative;
+      left: 410px;
+      margin-left:150px;
+      top:50px;
+      font-size: 35px;
+      color: rgb(249, 251, 252);
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+      display:block;
+      font-weight: bolder;
+      padding: 0;
+      white-space: nowrap;
+      font-family: monospace;   
+  }
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0954e0, 0 0 40px #0954e0, 0 0 50px #0954e0, 0 0 60px #0954e0, 0 0 70px #0954e0;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #0bc1f8, 0 0 40px #0bc1f8, 0 0 50px #0bc1f8, 0 0 60px #0bc1f8, 0 0 70px #0bc1f8, 0 0 80px #0bc1f8;
+    }
+  }
+  label{
+    position: relative;
+    left: 240px;
+    top: 35px;
+    margin-top:-6px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+    filter: opacity(200%);
+    display: block;
+    text-align: left;
+    font-size: 22px;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    font-weight: 400;
+  }
+  .input{
+    display: block;
+    position: relative;
+    left: 450px;
+    top: 10px;
+    width: 500px;
+    height: 36px;
+    margin-top: -5px;
+    font-size: 16px;
+    text-align:center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    border-radius: 5px;
+    outline: none;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.829);
+    border:none;
+    color: #000000;
+    transition: all 0.3s ease;
+  }
+  input:focus,
+  input:valid{
+    border-color: #dbd7dd;
+  }
+  
+  .button{
+    position:relative;
+    left: 30px;
+    top: -300px;
+    display: block;
+    width: 130px;
+    height: 34px;
+    border-radius: 5px;
+    background-color: #eff1f3; 
+    text-decoration: none;
+    border: 2px solid whitesmoke;
+    color: rgb(2, 2, 2);
+    text-align:center;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform:uppercase;
+    cursor: pointer;
+  }
+  .button:hover{
+    background-color: #ffffff;
+    color: black;
+    box-shadow: 0 0 5px #ffffff,
+    0 0 5px rgb(230 230 230 / 0.7),
+    0 0 15px rgb(230 230 230 / 0.5),
+    0 0 30px rgb(230 230 230 / 0.3);
+    border-color: #ffffff;
+    font-weight:900;
+    font-family: 'Open Sans', sans-serif;
+  }
